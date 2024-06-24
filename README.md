@@ -18,3 +18,4 @@
 - A website/app that can take in camera input by frame will eventually be made
 
 
+ - Credit to Kaggle dataset: https://www.kaggle.com/datasets/prithwirajmitra/covid-face-mask-detection-dataset
