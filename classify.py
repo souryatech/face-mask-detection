@@ -4,7 +4,6 @@ from PIL import Image
 import numpy as np
 from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
-import cv2
 
 
 MODEL = load_model(os.path.join('models','Mask1'))
