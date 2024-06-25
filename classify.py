@@ -19,6 +19,8 @@ classes = ['Wearing Mask','Not Wearing Mask']
 
 test_image = image.load_img(img)
 
+
+
 test_image = image.img_to_array(test_image)
 
 test_image = tf.image.resize(test_image,(256,256))
