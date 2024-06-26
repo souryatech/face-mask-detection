@@ -45,6 +45,7 @@ while(True):
     elif np.argmax(pred) == 1:
         color = (0,0,255)
 
+    cv2.putText(rgb_frame, classes[np.argmax(pred)],(x,y+h),cv2.FONT_HERSHEY_SIMPLEX,0.5,color,2,cv2.LINE_AA)
     cv2.rectangle(rgb_frame, (x,y), (x+w, y+h), color, 3)
     cv2.imshow('frame', rgb_frame)
   
