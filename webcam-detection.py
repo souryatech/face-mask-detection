@@ -5,7 +5,6 @@ import numpy as np
 
 from mtcnn import MTCNN
 
-from imutils.video import VideoStream
 
 detector = MTCNN()
 
