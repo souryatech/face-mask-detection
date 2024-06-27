@@ -13,7 +13,7 @@ detector = MTCNN()
 
 
 
-MODEL = tf.keras.models.load_model(os.path.join('models','Mask1'))
+MODEL = tf.keras.models.load_model(os.path.join('models','Mask2'))
 classes = ['No Mask', 'Mask']
 cap = cv2.VideoCapture(0)
 # vs = VideoStream(src=0).start()
@@ -47,9 +47,9 @@ while(True):
         if x:
 
             if np.argmax(pred) == 0:
-                color = (255,0,0)
-            elif np.argmax(pred) == 1:
                 color = (0,0,255)
+            elif np.argmax(pred) == 1:
+                color = (255,0,0)
 
             cv2.putText(rgb_frame, classes[np.argmax(pred)],(x-10,y+h-10),cv2.FONT_HERSHEY_SIMPLEX,0.5,color,2,cv2.LINE_AA)
             cv2.rectangle(rgb_frame, (x-10,y-10), (x+w+10, y+h+10), color, 3)
@@ -62,3 +62,4 @@ while(True):
 cap.release()
 cv2.destroyAllWindows()
 # vs.stop()
+
