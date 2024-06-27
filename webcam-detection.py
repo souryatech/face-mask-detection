@@ -22,8 +22,8 @@ n = 0
 def detect_frame(frame, mask_model, object, i):
     
     [x,y,w,h] = object[i]['box']
-    if not any([x,y,w,h]):
-        return False, False, False, False, False
+    # if not any([x,y,w,h]):
+    #     return False, False, False, False, False
   
     frame = frame[y-30:y+h+30,x-30:x+h+30]
     frame = cv2.resize(frame, (256,256))
