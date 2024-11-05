@@ -9,6 +9,9 @@
 - Can also be a fascinating tool to utilize 
 
 **How To Use**
+- First copy and paste this in your terminal:
+  `git clone https://github.com/souryatech/face-mask-detection.git
+   pip install -r requirements.txt`
 - You can classify an image or detect face masks from your web cam
 - **Classify:**
  - First clone the repository and download it on your computer
